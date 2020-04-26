@@ -6,6 +6,7 @@ const token = process.env.token;
 bot.on('ready', () =>{
     
     console.log('This bot is Online!');
+    bot.user.setActivity('PsychO | !credit');
 })
 
 bot.on('message', msg=>{
