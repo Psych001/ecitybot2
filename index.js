@@ -6,7 +6,7 @@ const token = process.env.token;
 bot.on('ready', () =>{
     
     console.log('This bot is Online!');
-    bot.user.setActivity('! ᴘsʏᴄʜᴏ ⚡#4863 | !credit') { type: 'WATCHING' }) ;
+    bot.user.setActivity('! ᴘsʏᴄʜᴏ ⚡#4863 | !credit')) ;
 })
 
 bot.on('message', msg=>{
@@ -19,9 +19,8 @@ bot.on('message', msg=>{
 bot.on('message', msg=>{
     
     if(msg.content === "נודר"){
-        channel.send('hello!')
-        msg.channel.sendMessage('נדרים')
-;}
+        msg.channel.sendMessage('נדרים');
+    }
 })
 
 
