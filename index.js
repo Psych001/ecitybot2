@@ -19,9 +19,15 @@ bot.on('message', msg=>{
 bot.on('message', msg=>{
     
     if(msg.content === "רוזי"){
-        msg.reply('הזונה!!');
+        msg.reply('הנסיכה!!');
     }
 })
 
+bot.on('message', msg=>{
+    
+    if(msg.content === "פרינס"){
+        msg.reply('סרדין');
+    }
+})
 
 bot.login(token);
