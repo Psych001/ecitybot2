@@ -19,7 +19,7 @@ bot.on('message', msg=>{
 bot.on('message', msg=>{
     
     if(msg.content === "אוהד"){
-        msg.reply('הוא פרש ב ');
+        msg.reply('המלך שלי ♥♥♥♥♥♥');
     }
 })
 
