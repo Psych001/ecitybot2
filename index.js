@@ -18,16 +18,19 @@ bot.on('message', msg=>{
 
 bot.on('message', msg=>{
     
-    if(msg.content === "רוזי"){
-        msg.reply('הנסיכה!!');
+    if(msg.content === "אוהד"){
+        msg.reply('הוא פרש אחי');
     }
 })
 
 bot.on('message', msg=>{
     
     if(msg.content === "פרינס"){
-        msg.reply('סרדין');
+        msg.reply('פלופר');
     }
 })
+
+
+
 
 bot.login(token);
