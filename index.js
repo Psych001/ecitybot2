@@ -19,14 +19,21 @@ bot.on('message', msg=>{
 bot.on('message', msg=>{
     
     if(msg.content === "אוהד"){
-        msg.reply('הוא פרש אחי');
+        msg.reply('הוא פרש ב ');
     }
 })
 
 bot.on('message', msg=>{
     
     if(msg.content === "פרינס"){
-        msg.reply('פלופר');
+        msg.reply('הפלופר');
+    }
+})
+
+bot.on('message', msg=>{
+    
+    if(msg.content === "חן בסט"){
+        msg.reply('http://prntscr.com/s6vcm0');
     }
 })
 
