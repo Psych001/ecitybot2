@@ -19,7 +19,9 @@ bot.on('message', msg=>{
 bot.on('message', msg=>{
     
     if(msg.content === "נודר"){
-        msg.channel.sendMessage('נדרים');
+        channel.send('נדרים')
+        msg.channel.send('נדרים')
+        ;
     }
 })
 
