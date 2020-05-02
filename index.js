@@ -4,11 +4,6 @@ const bot = new Discord.Client();
 
 
 
-const {
-	prefix,
-} = require('./config.json');
-const ytdl = require('ytdl-core');
-
 
 bot.on('ready', () =>{
     
