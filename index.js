@@ -3,8 +3,8 @@ const token = process.env.token;
 const bot = new Discord.Client();
 const ytdl = require('ytdl-core');
 
-
-const prefix: "!";
+var prefix = "!";
+const prefix = "!";
 
 bot.on('ready', () =>{
     
@@ -57,7 +57,7 @@ client.on("message", async message => {
 
   const serverQueue = queue.get(message.guild.id);
 
-  if (message.content.startsWith(`${prefix}play`)) {
+  if (message.content.startsWith(`!play`)) {
     execute(message, serverQueue);
     return;
   } else if (message.content.startsWith(`${prefix}skip`)) {
