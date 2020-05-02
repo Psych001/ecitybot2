@@ -1,10 +1,14 @@
 const Discord = require('discord.js');
 const token = process.env.token;
 const bot = new Discord.Client();
+
+
+
+const {
+	prefix,
+} = require('./config.json');
 const ytdl = require('ytdl-core');
 
-var prefix = "!";
-const prefix = "!";
 
 bot.on('ready', () =>{
     
@@ -49,11 +53,14 @@ bot.on('message', msg=>{
 
 
 
-/* 
+
+
+
+
 
 client.on("message", async message => {
   if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return; */
+  if (!message.content.startsWith(prefix)) return; 
 
   const serverQueue = queue.get(message.guild.id);
 
