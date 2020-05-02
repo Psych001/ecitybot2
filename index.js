@@ -3,14 +3,7 @@ const bot = new Discord.Client();
 
 const token = process.env.token;
 
-var version =  "1.0.7";
 
-bot.on('message', msg=>{
-    
-    if(msg.content === "!version"){
-        msg.reply(version);
-    }
-})
 
 bot.on('ready', () =>{
     
@@ -45,6 +38,14 @@ bot.on('message', msg=>{
         msg.reply('http://prntscr.com/s6vcm0');
     }
 })
+
+bot.on('message', msg=>{
+    
+    if(msg.content === "!version"){
+        msg.reply('1.0.2');
+    }
+})
+
 
 
 
