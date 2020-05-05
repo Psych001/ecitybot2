@@ -2,14 +2,12 @@ const Discord = require('discord.js');
 const token = process.env.token;
 const bot = new Discord.Client();
 
-
-
-
 bot.on('ready', () =>{
     
     console.log('This bot is Online!');
     bot.user.setActivity('! ᴘsʏᴄʜᴏ ⚡#4863 | !credit') ;
 })
+
 
 bot.on('message', msg=>{
     
@@ -42,7 +40,7 @@ bot.on('message', msg=>{
 bot.on('message', msg=>{
     
     if(msg.content === "!version"){
-        msg.reply('Version: 1.0.3');
+        msg.reply('Version: 1.0.4');
     }
 })
 
