@@ -39,6 +39,13 @@ bot.on('message', msg=>{
 
 bot.on('message', msg=>{
     
+    if(msg.content === "מוריס"){
+        msg.reply('מוריס מת');
+    }
+})
+
+bot.on('message', msg=>{
+    
     if(msg.content === "שאליקו"){
         msg.reply('https://cdn.discordapp.com/attachments/639192344591073321/707697888918110218/Screenshot_939.png');
     }
@@ -54,7 +61,7 @@ bot.on('message', msg=>{
 bot.on('message', msg=>{
     
     if(msg.content === "!version"){
-        msg.reply('Version: 1.0.6');
+        msg.reply('Version: 1.0.7');
     }
 })
 
