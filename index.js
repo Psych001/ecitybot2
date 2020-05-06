@@ -5,7 +5,7 @@ const bot = new Discord.Client();
 bot.on('ready', () =>{
     
     console.log('This bot is Online!');
-    bot.user.setActivity('Version: 1.0.7 | !credit') ;
+    bot.user.setActivity('Version: 1.0.8 | !credit') ;
 })
 
 
@@ -47,7 +47,7 @@ bot.on('message', msg=>{
 bot.on('message', msg=>{
     
     if(msg.content === "שאליקו"){
-        msg.reply('https://cdn.discordapp.com/attachments/639192344591073321/707697888918110218/Screenshot_939.png');
+        msg.reply('http://prntscr.com/sc73qj');
     }
 })
 
@@ -58,10 +58,18 @@ bot.on('message', msg=>{
     }
 })
 
+
+bot.on('message', msg=>{
+    
+    if(msg.content === "קווין"){
+        msg.reply('https://cdn.discordapp.com/attachments/458277615011364864/707701222269911110/unknown.png');
+    }
+})
+
 bot.on('message', msg=>{
     
     if(msg.content === "!version"){
-        msg.reply('Version: 1.0.7');
+        msg.reply('Version: 1.0.8');
     }
 })
 
