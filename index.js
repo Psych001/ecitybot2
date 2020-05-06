@@ -40,7 +40,7 @@ bot.on('message', msg=>{
 bot.on('message', msg=>{
     
     if(msg.content === "!version"){
-        msg.reply('Version: 1.0.4');
+        msg.reply('Version: 1.0.5');
     }
 })
 
