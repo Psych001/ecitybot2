@@ -1,11 +1,24 @@
 const Discord = require('discord.js');
+
+const configs = require("./configs.json");
+const fivereborn = require('fivereborn-query');
+
 const token = process.env.token;
 const bot = new Discord.Client();
+client.config = configs;
 
-bot.on('ready', () =>{
-    
-    console.log('This bot is Online!');
-})
+
+client.login(configs.token)
+  .then(
+    () => {
+      console.log("Bot startet!");
+      console.log("Receiving information, please wait...");
+    },
+    () => {
+      client.destroy();
+      console.log("Bot destroyed!");
+    });
+
 
 
 bot.on('message', msg=>{
