@@ -1,26 +1,18 @@
 {
   "name": "discord-bot",
-  "productName": "Discord Bot",
-  "version": "0.1.0",
-  "description": "Discord Bot",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "author": {
-    "name": "Kasper Rasmussen"
-  },
   "scripts": {
-    "start": "node index"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "PsychO",
+  "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "@discordjs/opus": "^0.3.1",
     "discord.js": "^12.2.0",
     "ffmpeg": "0.0.4",
-    "fivereborn-query": "^1.0.4",
     "fluent-ffmpeg": "^2.1.2",
     "ytdl-core": "^2.1.1"
-=======
-    "discord.js": "^11.4.2",
-    "fivereborn-query": "^1.0.4"
->>>>>>> 9fd8aac72c44eb9f4c9ea29e6b0baf09b43c5786
   }
 }
