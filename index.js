@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const configs = require("./configs.json");
 const fivereborn = require('fivereborn-query')
 
 const token = process.env.token;
