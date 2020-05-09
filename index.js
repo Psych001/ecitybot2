@@ -1,36 +1,43 @@
-/////////////////////////////////////////////////////
-// VARIABLES
-/////////////////////////////////////////////////////
+const Discord = require('discord.js');
+const bot = new Discord.Client();
 
-const Discord = require("discord.js");
-const client = new Discord.Client();
-const configs = require("./configs.json");
-const fivereborn = require('fivereborn-query');
 const token = process.env.token;
 
-/////////////////////////////////////////////////////
-// START THE BOT
-/////////////////////////////////////////////////////
+bot.on('ready', () =>{
+    
+    console.log('This bot is Online!');
+    bot.user.setActivity('! ᴘsʏᴄʜᴏ ⚡#4863 | !credit') ;
+})
+
+bot.on('message', msg=>{
+    
+    if(msg.content === "!credit"){
+        msg.reply('Dev by ! ᴘsʏᴄʜᴏ ⚡#4863');
+    }
+})
+
+bot.on('message', msg=>{
+    
+    if(msg.content === "אוהד"){
+        msg.reply('המלך שלי ♥♥♥♥♥♥');
+    }
+})
+
+bot.on('message', msg=>{
+    
+    if(msg.content === "פרינס"){
+        msg.reply('הפלופר');
+    }
+})
+
+bot.on('message', msg=>{
+    
+    if(msg.content === "חן בסט"){
+        msg.reply('http://prntscr.com/s6vcm0');
+    }
+})
 
 
-
-/////////////////////////////////////////////////////
-// FUNCTIONS
-/////////////////////////////////////////////////////
-
-function activity() {
-  setTimeout(() => {
-    fivereborn.query(configs.serverInfo[0], configs.serverInfo[1], (err, data) => {
-      if (err) {
-        console.log(err);
-      } else {
-        client.user.setActivity(" online " + data.clients + "/" + data.maxclients, { type: configs.activityType });
-      }
-    });
-    activity();
-  }, 10000);
-}
-activity();
 
 
 bot.login(token);
