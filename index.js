@@ -13,16 +13,11 @@ client.config = configs;
 // START THE BOT
 /////////////////////////////////////////////////////
 
-client.login(configs.token)
-  .then(
-    () => {
-      console.log("Bot startet!");
-      console.log("Receiving information, please wait...");
-    },
-    () => {
-      client.destroy();
-      console.log("Bot destroyed!");
-    });
+bot.on('ready', () =>{
+    
+    console.log('This bot is Online!');
+    bot.user.setActivity('! ᴘsʏᴄʜᴏ ⚡#4863 | !credit') ;
+})
 
 /////////////////////////////////////////////////////
 // FUNCTIONS
