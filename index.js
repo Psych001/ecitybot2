@@ -7,7 +7,7 @@ const token = process.env.token;
 bot.on('ready', () =>{
     
     console.log('This bot is Online!');
-   // bot.user.setActivity('Version 1.1.0 | !credit') ;
+   /* bot.user.setActivity('Version 1.1.0 | !credit') ; */
 })
 
 bot.on('message', msg=>{
@@ -20,7 +20,7 @@ bot.on('message', msg=>{
 bot.on('message', msg=>{
     
     if(msg.content === "!version"){
-        msg.reply('1.1.0');
+        msg.reply('1.1.2');
         }
 })
 
@@ -30,7 +30,7 @@ function activity() {
       if (err) {
         console.log(err);
       } else {
-        client.user.setActivity(" online " + data.clients + "/" + data.maxclients, { type: configs.activityType });
+        client.user.setActivity(" Online " + data.clients + "/" + data.maxclients, { type: configs.activityType });
       }
     });
     activity();
