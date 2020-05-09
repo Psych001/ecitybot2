@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const fivereborn = require('fivereborn-query')
 
 const token = process.env.token;
 
@@ -18,26 +19,28 @@ bot.on('message', msg=>{
 
 bot.on('message', msg=>{
     
-    if(msg.content === "אוהד"){
-        msg.reply('המלך שלי ♥♥♥♥♥♥');
-    }
+    if(msg.content === "!version"){
+        msg.reply('1.0.9');
+        }
+})
+
+fivereborn.query("51.75.73.161", 30120, (err, data) => {
+  if (!err) {
+    console.log(data)
+  } else {
+    console.log('Server is offline.')
+  }
 })
 
 bot.on('message', msg=>{
     
-    if(msg.content === "פרינס"){
-        msg.reply('הפלופר');
-    }
+    if(msg.content === "!data"){
+        msg.reply(data);
+        }
 })
 
-bot.on('message', msg=>{
+
+
     
-    if(msg.content === "חן בסט"){
-        msg.reply('http://prntscr.com/s6vcm0');
-    }
-})
-
-
-
 
 bot.login(token);
