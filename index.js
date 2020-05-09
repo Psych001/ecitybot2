@@ -7,22 +7,12 @@ const client = new Discord.Client();
 const configs = require("./configs.json");
 const fivereborn = require('fivereborn-query');
 const token = process.env.token;
-client.config = configs;
 
 /////////////////////////////////////////////////////
 // START THE BOT
 /////////////////////////////////////////////////////
 
-client.login(configs.token)
-  .then(
-    () => {
-      console.log("Bot startet!");
-      console.log("Receiving information, please wait...");
-    },
-    () => {
-      client.destroy();
-      console.log("Bot destroyed!");
-    });
+
 
 /////////////////////////////////////////////////////
 // FUNCTIONS
