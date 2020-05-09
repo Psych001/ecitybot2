@@ -23,7 +23,7 @@ bot.on('message', msg=>{
 bot.on('message', msg=>{
     
     if(msg.content === "!version"){
-        msg.reply('1.1.2');
+        msg.reply('1.1.3');
         }
 })
 
