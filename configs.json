@@ -1,5 +1,6 @@
 {
     "activityType": "PLAYING",
+    "token": process.env.token,
     "serverInfo": [
         "fivem.play-il.co.il",
         30120

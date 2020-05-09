@@ -1,31 +1,32 @@
-const Discord = require('discord.js');
-const bot = new Discord.Client();
+/////////////////////////////////////////////////////
+// VARIABLES
+/////////////////////////////////////////////////////
+
+const Discord = require("discord.js");
+const client = new Discord.Client();
 const configs = require("./configs.json");
-const fivereborn = require('fivereborn-query')
-// client.config = configs;
-
-
+const fivereborn = require('fivereborn-query');
 const token = process.env.token;
+client.config = configs;
 
-bot.on('ready', () =>{
-    
-    console.log('This bot is Online!');
-   /* bot.user.setActivity('Version 1.1.0 | !credit') ; */
-})
+/////////////////////////////////////////////////////
+// START THE BOT
+/////////////////////////////////////////////////////
 
-bot.on('message', msg=>{
-    
-    if(msg.content === "!credit"){
-        msg.reply('Dev by ! ᴘsʏᴄʜᴏ ⚡#4863');
-    }
-})
+client.login(configs.token)
+  .then(
+    () => {
+      console.log("Bot startet!");
+      console.log("Receiving information, please wait...");
+    },
+    () => {
+      client.destroy();
+      console.log("Bot destroyed!");
+    });
 
-bot.on('message', msg=>{
-    
-    if(msg.content === "!version"){
-        msg.reply('1.1.3');
-        }
-})
+/////////////////////////////////////////////////////
+// FUNCTIONS
+/////////////////////////////////////////////////////
 
 function activity() {
   setTimeout(() => {
@@ -33,13 +34,13 @@ function activity() {
       if (err) {
         console.log(err);
       } else {
-        client.user.setActivity(" Online " + data.clients + "/" + data.maxclients, { type: configs.activityType });
+        client.user.setActivity(" online " + data.clients + "/" + data.maxclients, { type: configs.activityType });
       }
     });
     activity();
   }, 10000);
 }
 activity();
- 
+
 
 bot.login(token);
