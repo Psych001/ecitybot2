@@ -17,8 +17,28 @@ bot.on('message', msg=>{
     }
 })
 
+bot.on('message', msg=>{
+    
+    if(msg.content === "אוהד"){
+        msg.reply('המלך שלי ♥♥♥♥♥♥');
+    }
+})
+
+bot.on('message', msg=>{
+    
+    if(msg.content === "פרינס"){
+        msg.reply('הפלופר');
+    }
+})
+
+bot.on('message', msg=>{
+    
+    if(msg.content === "חן בסט"){
+        msg.reply('http://prntscr.com/s6vcm0');
+    }
+})
 
 
 
 
-bot.login(configs,token);
+bot.login(token);
