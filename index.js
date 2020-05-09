@@ -36,6 +36,7 @@ function activity() {
     activity();
   }, 10000);
 }
+activity();
  
 
 bot.login(token);
