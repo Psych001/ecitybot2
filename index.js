@@ -7,7 +7,7 @@ const token = process.env.token;
 bot.on('ready', () =>{
     
     console.log('This bot is Online!');
-    bot.user.setActivity('! ᴘsʏᴄʜᴏ ⚡#4863 | !credit') ;
+    bot.user.setActivity('Version 1.0.9 | !credit') ;
 })
 
 bot.on('message', msg=>{
